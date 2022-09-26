@@ -75,7 +75,7 @@ def create_team(username: str, password: str, team_name: str):
 
     sess.post(f"{API}/teams", json={
         "name": team_name,
-        "scheduling_timezone": "US/Pacific",
+        "scheduling_timezone": "EU/Moscow",
     }, headers={
         "X-CSRF-TOKEN": csrf
     })
